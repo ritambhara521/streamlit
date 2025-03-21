@@ -8,7 +8,7 @@ import os
 st.title("RJ app")
 
 MODEL_PATH = "best_model.hdf5"
-MODEL_URL = "https://drive.google.com/file/d/1NoqbEDMj-_0wEPbZ-nwuVbbPlQN5Ju7X/view?usp=drive_link_"
+MODEL_URL = "https://drive.google.com/uc?id=1NoqbEDMj-_0wEPbZ-nwuVbbPlQN5Ju7X"
 
 # Load the model only once
 @st.cache_resource
