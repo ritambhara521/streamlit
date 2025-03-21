@@ -16,9 +16,9 @@ def load_model():
      if not os.path.exists(MODEL_PATH):
           st.info("Downloading model, please wait...")
           gdown.download(MODEL_URL, MODEL_PATH, quiet=False)
-    model = tf.keras.models.load_model(MODEL_PATH)
-    #model = tf.keras.models.load_model("best_model.hdf5")
-    return model
+     model = tf.keras.models.load_model(MODEL_PATH)
+     #model = tf.keras.models.load_model("best_model.hdf5")
+     return model
 
 model = load_model()
 st.success("Model loaded successfully!")
