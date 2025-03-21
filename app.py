@@ -14,8 +14,8 @@ MODEL_URL = "https://drive.google.com/file/d/1NoqbEDMj-_0wEPbZ-nwuVbbPlQN5Ju7X/v
 @st.cache_resource
 def load_model():
      if not os.path.exists(MODEL_PATH):
-     st.info("Downloading model, please wait...")
-     gdown.download(MODEL_URL, MODEL_PATH, quiet=False)
+          st.info("Downloading model, please wait...")
+          gdown.download(MODEL_URL, MODEL_PATH, quiet=False)
     model = tf.keras.models.load_model(MODEL_PATH)
     #model = tf.keras.models.load_model("best_model.hdf5")
     return model
